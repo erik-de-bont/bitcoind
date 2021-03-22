@@ -5,7 +5,7 @@ Bitcoind for Docker
 [![Docker Pulls](https://img.shields.io/docker/pulls/edebont/bitcoind.svg)](https://hub.docker.com/r/edebont/bitcoind/)
 
 
-Docker image that runs the Bitcoin bitcoind node in a container for easy deployment.
+Docker image that runs the Bitcoin bitcoind node in a container for easy deployment. 
 
 This image is a clone from https://hub.docker.com/r/kylemanna/bitcoind, generated for multiple architectures. 
 
