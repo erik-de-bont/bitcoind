@@ -15,7 +15,7 @@ Requirements
 ------------
 
 * Physical machine, Raspberry Pi, cloud instance, or VPS that supports Docker (i.e. [Vultr](http://bit.ly/1HngXg0), [Digital Ocean](http://bit.ly/18AykdD), KVM or XEN based VMs) running Ubuntu 14.04 or later (*not OpenVZ containers!*)
-* At least 200 GB to store the block chain files (and always growing!). Use external storage (USB disk or NAS share) for Raspberry Pi. 
+* At least 200 GB to store the block chain files (and always growing!). Use external storage (USB disk or NAS share)  for Raspberry Pi. 
 * At least 1 GB RAM + 2 GB swap file
 
 
@@ -25,8 +25,8 @@ Quick Start
 1. Create a `bitcoind-data` volume to persist the bitcoind blockchain data, should exit immediately.  The `bitcoind-data` container will store the blockchain when the node container is recreated (software upgrade, reboot, etc):
 
         docker run -v </path/bitcoind-data-folder>:/bitcoin/.bitcoin --name=bitcoind-node -d \
-            -e "DISABLEWALLET=1"  \
-            -e "PRINTTOCONSOLE=1"  \
+            -e "DISABLEWALLET=1"  \  #optional
+            -e "PRINTTOCONSOLE=1"  \ #optional
             -p 8333:8333 \
             -p 127.0.0.1:8332:8332 \
             edebont/bitcoind
