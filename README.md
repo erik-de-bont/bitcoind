@@ -1,6 +1,7 @@
 Bitcoind for Docker
 ===================
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/edebont/bitcoind/master/LICENSE)
 [![Docker Stars](https://img.shields.io/docker/stars/edebont/bitcoind.svg)](https://hub.docker.com/r/edebont/bitcoind/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/edebont/bitcoind.svg)](https://hub.docker.com/r/edebont/bitcoind/)
 
@@ -24,6 +25,8 @@ Quick Start
 1. Create a `bitcoind-data` volume to persist the bitcoind blockchain data, should exit immediately.  The `bitcoind-data` container will store the blockchain when the node container is recreated (software upgrade, reboot, etc):
 
         docker run -v </path/bitcoind-data-folder>:/bitcoin/.bitcoin --name=bitcoind-node -d \
+            -e "DISABLEWALLET=1"  \
+            -e "PRINTTOCONSOLE=1"  \
             -p 8333:8333 \
             -p 127.0.0.1:8332:8332 \
             edebont/bitcoind
@@ -44,4 +47,4 @@ Quick Start
 Documentation
 -------------
 
-* Additional documentation in the [docs folder](docs).
+* Additional documentation can be found in the https://github.com/erik-de-bont/bitcoind/tree/master/docs
