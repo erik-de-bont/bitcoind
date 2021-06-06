@@ -10,6 +10,10 @@ Docker image that runs the Bitcoin bitcoind node in a container for easy deploym
 
 This image is a clone from https://hub.docker.com/r/kylemanna/bitcoind, generated for multiple architectures. 
 
+Update Info
+------------
+2021.06.06 : Upgrade bitcoind in docker image from version 0.21.0 to 0.21.1
+
 
 Requirements
 ------------
