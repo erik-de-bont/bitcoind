@@ -16,7 +16,7 @@ RUN apt update \
 
 ARG VERSION=0.21.1
 ARG ARCH=arm
-ARG BITCOIN_CORE_SIGNATURE=3a92e312ffd3ca92579d46ec52e3dcb1b09bbdd11fe7c6a735e8546c7d9975e0
+ARG BITCOIN_CORE_SIGNATURE=01EA5486DE18A882D4C2684590C8019E36C2E964
 
 # Don't use base image's bitcoin package for a few reasons:
 # 1. Would need to use ppa/latest repo for the latest release.
