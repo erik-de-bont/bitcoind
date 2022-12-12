@@ -12,6 +12,7 @@ This image is a clone from https://hub.docker.com/r/kylemanna/bitcoind, generate
 
 Update Info
 ------------
+2022.12.12 : Upgrade bitcoind in docker image from version 0.23 to 0.24
 2022.08.13 : Added bitcoind 0.23 riscv64 version  
 2022.07.21 : Upgrade bitcoind in docker image from version 0.21.0 to 0.23  
 2021.06.06 : Upgrade bitcoind in docker image from version 0.21.0 to 0.21.1  
