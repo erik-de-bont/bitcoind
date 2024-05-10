@@ -12,6 +12,7 @@ This image is a clone from https://hub.docker.com/r/kylemanna/bitcoind, generate
 
 Update Info
 ------------
+2024.05.02 : Upgrade bitcoind in docker image from version 26.0 to 27.0 and switched to debian base image 
 2024.03.24 : Upgrade bitcoind in docker image from version 25.1 to 26.0 
 2023.11.03 : Upgrade bitcoind in docker image from version 25.0 to 25.1  
 2023.06.08 : Upgrade bitcoind in docker image from version 24.0.1 to 25.0  
